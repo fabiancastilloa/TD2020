@@ -1,5 +1,218 @@
-.columna{
-    background-color: rgb(31, 173, 26);
 
-   /*  <!-- externo 1518 --> */
+
+:root {
+    --celeste:#48abe0;
+    --naranjo:#e69a21;
+    --amarillo:#fbeb00;
+    --verde:#18f13c;
+    --gris:#ced3cf;
+    --grisborde:#727272;
+    --blanco:white;
+    --negro:black;
+    --azul:rgb(20, 81, 212);
+    --rojo:red;
+ 
+  }
+ 
+
+  .celda{
+    background-color:var(--naranjo);
+}
+ 
+.celda {
+    color:var(--blanco);
+    border: 2px solid var(--rojo);
+    font-size: large;
+    text-align: center;
+    box-sizing: border-box;
+    height:  5ch;
+
+    display:inline-block; 
+ }
+
+p{
+    margin-top: 0ch;
+ }
+
+ 
+@media (max-width: 399px) {
+
+    .celda {
+        font-size: 2ch;
+        height:  7ch;
+        }
+
+        p.numero1:after {
+        content: "Un mensaje"
+        }
+
+        p.numero2:after {
+        content: "dividido"
+        }
+
+        p.numero3:after {
+        content: "en 3 partes"
+        }
+
+        
+    .celda:nth-child(1) {
+        width: 100%;    
+        margin-left: 0%; 
+    }
+ 
+    .celda:nth-child(2) {
+        width: 100%;    
+        margin-left: 0%; 
+    }
+
+    .celda:nth-child(3) {
+        width: 100%;    
+        margin-left: 0%; 
+   /*      height: 10ch;
+        padding-top: 2ch; */
+    }
+  
+/*     .celda:nth-child(5),.celda:nth-child(6),.celda:nth-child(7),.celda:nth-child(8) {
+        width: 100%; 
+        margin-left: 0%; 
+        height: 0ch;
+        padding-top: 0ch;   
+        display: none;        
+    } */
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+
+    .celda {
+        font-size: 3ch;
+        height:  10ch;
+        }
+
+    p.numero1:after {
+        content: "Un mensaje"
+        }
+
+        p.numero2:after {
+        content: "dividido"
+        }
+
+        p.numero3:after {
+        content: "en 3 partes"
+        }        
+ 
+    .celda:nth-child(1) {
+        width: 49%;    
+        margin-left: 0%; 
+        /* height: 3ch; */
+    }
+ 
+    .celda:nth-child(2) {
+        width: 49%;    
+        margin-left: 0%;         
+    }
+
+    .celda:nth-child(3) {
+        width: 100%;    
+        margin-left: 0%;  
+ /*         height: 10ch;    */
+/*          padding-top: 3ch;     */ 
+    }
+
+ 
+}
+
+@media (min-width: 601px) and (max-width: 800px)  {
+
+    .celda {
+        font-size: 3ch;
+        height:  10ch;
+        }
+
+    p.numero1:after {
+        content: "en 3 partes"        
+        }
+
+        p.numero2:after {
+        content: "dividido"
+        }
+
+        p.numero3:after {
+        content: "Un mensaje"
+        }
+
+    .celda:nth-child(1) {
+        width: 34%;    
+        margin-left: 65%;       
+    }
+ 
+    .celda:nth-child(2) {
+        width: 33%;    
+        margin-left: 32%;  
+        margin-right: 32%;    
+    }
+
+    .celda:nth-child(3) {
+        width: 32%;    
+        margin-left: 0%;     
+    }
+   
+   
+/* 
+    .celda:nth-child(4),.celda:nth-child(5),.celda:nth-child(6),.celda:nth-child(7),.celda:nth-child(8),.celda:nth-child(9),.celda:nth-child(10) {
+        width: 100%; 
+        margin-left: 0%; 
+        height: 0ch;
+        padding-top: 0ch;   
+        display: none;        
+    } */
+
+}
+
+
+@media (min-width: 801px)  
+{
+ 
+    .celda {
+        font-size: 3ch;
+        height:  10ch;
+        }
+
+    p.numero1:after {
+        content: "dividido"       
+        }
+
+        p.numero2:after {
+        content: "en 3 partes"
+        }
+
+        p.numero3:after {
+        content: "Un mensaje"
+        }
+
+    .celda:nth-child(1) {
+        width: 34%;    
+        margin-left: 65%;       
+    }
+ 
+    .celda:nth-child(2) {
+        width: 33%;    
+        margin-left: 32%;  
+        margin-right: 32%;    
+    }
+
+    .celda:nth-child(3) {
+        width: 32%;    
+        margin-left: 0%;     
+    }
+   
+   
+
+    .celda:nth-child(2) {
+        width: 100%; 
+        margin-left: 0%; 
+        height: 0ch;
+        padding-top: 0ch;   
+        display: none;        
+    }
+
 }
